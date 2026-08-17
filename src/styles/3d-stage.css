@@ -1,0 +1,68 @@
+/* 3D Stage & WebGL Fallbacks */
+
+.stage-3d-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Reduced Motion & WebGL Unavailable Fallback */
+.fallback-3d-stage {
+  display: none;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at center, rgba(16, 185, 129, 0.15) 0%, rgba(9, 9, 11, 0.95) 70%);
+}
+
+.no-webgl .fallback-3d-stage {
+  display: flex;
+}
+
+.no-webgl .canvas-3d {
+  display: none !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fallback-3d-stage {
+    display: flex;
+  }
+  .canvas-3d {
+    display: none !important;
+  }
+}
+
+.fallback-cube {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: rotate-fallback 12s linear infinite;
+}
+
+@keyframes rotate-fallback {
+  from { transform: rotateX(0deg) rotateY(0deg); }
+  to { transform: rotateX(360deg) rotateY(360deg); }
+}
+
+.fallback-cube div {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border: 1px solid var(--accent-primary);
+  background: rgba(16, 185, 129, 0.08);
+}
+
+.fallback-cube .front  { transform: translateZ(50px); }
+.fallback-cube .back   { transform: rotateY(180deg) translateZ(50px); }
+.fallback-cube .right  { transform: rotateY(90deg) translateZ(50px); }
+.fallback-cube .left   { transform: rotateY(-90deg) translateZ(50px); }
+.fallback-cube .top    { transform: rotateX(90deg) translateZ(50px); }
+.fallback-cube .bottom { transform: rotateX(-90deg) translateZ(50px); }
+
+

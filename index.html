@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Saminathan M — AI Engineer & Machine Learning Specialist</title>
+  <meta name="description"
+    content="Portfolio of Saminathan M, AI Engineer and ML Intern specializing in Data Pipelines, Predictive Modeling, Agentic AI, NLP, and Computer Vision." />
+  <meta name="keywords"
+    content="Saminathan, AI Engineer, Machine Learning Intern, Data Pipelines, RAG, Python, TensorFlow, PyTorch, Portfolio" />
+  <meta name="author" content="Saminathan M" />
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Saminathan M — AI Engineer & Machine Learning Specialist" />
+  <meta property="og:description"
+    content="Turning complex data into direction. Explore 3D interactive projects, research, and technical experience." />
+  <meta property="og:image" content="/saminathan-profile.png" />
+
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="/src/styles/main.css" />
+  <link rel="stylesheet" href="/src/styles/components.css" />
+  <link rel="stylesheet" href="/src/styles/terminal.css" />
+  <link rel="stylesheet" href="/src/styles/3d-stage.css" />
+</head>
+
+<body>
+  <div class="bg-grid-pattern"></div>
+
+  <!-- Header & Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="container navbar-container">
+        <a href="#home" class="nav-brand">
+          <div class="nav-brand-logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="m12 3-8 4.5v9L12 21l8-4.5v-9L12 3z" />
+              <path d="M12 12 4 7.5" />
+              <path d="M12 12v9" />
+              <path d="M12 12l8-4.5" />
+            </svg>
+          </div>
+          <span>saminathan<span class="blinking-cursor">_</span></span>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">~/home</a></li>
+          <li><a href="#about" class="nav-link">~/about</a></li>
+          <li><a href="#skills" class="nav-link">~/skills</a></li>
+          <li><a href="#projects" class="nav-link">~/projects</a></li>
+          <li><a href="#experience" class="nav-link">~/experience</a></li>
+          <li><a href="#contact" class="nav-link">~/contact</a></li>
+        </ul>
+
+        <div class="nav-controls">
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            <span>Available for Work</span>
+          </div>
+
+          <button id="theme-toggle" class="icon-btn" aria-label="Toggle theme">
+            <!-- Theme icon injected by JS -->
+          </button>
+
+          <a href="#contact" class="btn btn-outline"
+            style="display: none; padding: 0.45rem 1rem; font-size: 0.8125rem;">
+            Contact
+          </a>
+
+          <button id="mobile-toggle" class="icon-btn mobile-toggle" aria-label="Open navigation menu"
+            aria-expanded="false">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 5h16" />
+              <path d="M4 12h16" />
+              <path d="M4 19h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-drawer" class="mobile-drawer">
+      <a href="#home" class="nav-link">~/home</a>
+      <a href="#about" class="nav-link">~/about</a>
+      <a href="#skills" class="nav-link">~/skills</a>
+      <a href="#projects" class="nav-link">~/projects</a>
+      <a href="#experience" class="nav-link">~/experience</a>
+      <a href="#contact" class="nav-link">~/contact</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION (~/home) -->
+    <section id="home" class="hero-section">
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Hero Text & Terminal -->
+          <div class="hero-content">
+            <div class="section-tag">AI Undergraduate & ML Intern</div>
+            <h1 class="hero-headline">
+              Turning data <br />
+              <span class="text-accent">into direction.</span>
+            </h1>
+            <p class="hero-description">
+              Hi, I'm Saminathan. I engineer end-to-end data pipelines, predictive machine learning models, and
+              autonomous RAG systems that convert complex datasets into high-impact insights.
+            </p>
+
+            <div class="hero-actions" style="margin-bottom: 2.5rem;">
+              <a href="#projects" class="btn btn-accent">
+                Explore Work
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14" />
+                  <path d="m12 5 7 7-7 7" />
+                </svg>
+              </a>
+              <a href="#contact" class="btn btn-outline">
+                Let's Collaborate
+              </a>
+            </div>
+
+            <!-- Interactive Terminal (~bash) -->
+            <div class="terminal-window" id="terminal-window">
+              <div class="terminal-header">
+                <div class="terminal-dots">
+                  <span class="dot dot-red"></span>
+                  <span class="dot dot-yellow"></span>
+                  <span class="dot dot-green"></span>
+                </div>
+                <div class="terminal-title">saminathan@dev:~ (bash)</div>
+                <div></div>
+              </div>
+              <div class="terminal-body" id="terminal-output">
+                <!-- Terminal lines rendered dynamically -->
+              </div>
+              <div style="padding: 0 1.25rem 1.25rem 1.25rem;">
+                <div class="terminal-prompt-line">
+                  <span class="prompt-user">saminathan@dev</span>:<span class="prompt-path">~</span>$&nbsp;
+                  <input type="text" id="terminal-input" class="terminal-input"
+                    placeholder="type 'help', 'skills', 'projects'..." autocomplete="off" />
+                </div>
+                <div class="terminal-chip-list" id="terminal-chips">
+                  <span class="terminal-chip" data-cmd="help">help</span>
+                  <span class="terminal-chip" data-cmd="whoami">whoami</span>
+                  <span class="terminal-chip" data-cmd="skills">skills</span>
+                  <span class="terminal-chip" data-cmd="projects">projects</span>
+                  <span class="terminal-chip" data-cmd="experience">experience</span>
+                  <span class="terminal-chip" data-cmd="contact">contact</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive 3D Hero Scene -->
+          <div class="hero-3d-wrapper">
+            <div id="hero-canvas" class="stage-3d-container">
+              <!-- WebGL Canvas injected by Three.js -->
+            </div>
+
+            <!-- Fallback for no-webgl or reduced motion -->
+            <div class="fallback-3d-stage">
+              <div class="fallback-cube">
+                <div class="front"></div>
+                <div class="back"></div>
+                <div class="right"></div>
+                <div class="left"></div>
+                <div class="top"></div>
+                <div class="bottom"></div>
+              </div>
+            </div>
+
+            <div class="hero-3d-overlay">
+              <span>⚡ Autonomous Pathfinding Grid</span>
+              <span>BFS Matrix AI</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION (~/about) -->
+    <section id="about">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">02 / Engineering Profile</div>
+          <h2 class="section-title">Crafting Intelligent <span class="text-accent">Systems.</span></h2>
+        </div>
+
+        <div class="about-grid">
+          <!-- Portrait & Visual Card -->
+          <div class="portrait-card">
+            <canvas id="ascii-portrait-canvas"
+              style="width: 100%; height: 100%; min-height: 480px; display: block; border-radius: 12px; cursor: crosshair;"
+              aria-label="Saminathan M Interactive ASCII Portrait"></canvas>
+            <div class="portrait-scanline"></div>
+            <div
+              style="position: absolute; bottom: 12px; left: 16px; font-family: var(--font-mono); font-size: 0.72rem; color: var(--accent-primary); pointer-events: none; text-shadow: 0 1px 4px rgba(0,0,0,0.9); z-index: 3;">
+
+            </div>
+          </div>
+
+          <!-- Bio & Technical Matrix -->
+          <div>
+            <p class="about-bio">
+              I specialize in combining statistical modeling with modern full-stack architectures. From designing
+              high-throughput data processing pipelines for non-profits to building production-ready machine learning
+              solutions, I build software that thinks and scales.
+            </p>
+
+            <div
+              style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 2rem;">
+              <div
+                style="background: var(--bg-card); padding: 1.25rem; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+                <div
+                  style="color: var(--accent-primary); font-family: var(--font-mono); font-size: 0.8rem; margin-bottom: 0.5rem; text-transform: uppercase;">
+                  Primary Focus</div>
+                <div style="font-weight: 700; font-size: 1.1rem;">Agentic RAG & Machine Learning</div>
+              </div>
+              <div
+                style="background: var(--bg-card); padding: 1.25rem; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+                <div
+                  style="color: var(--accent-secondary); font-family: var(--font-mono); font-size: 0.8rem; margin-bottom: 0.5rem; text-transform: uppercase;">
+                  Education</div>
+                <div style="font-weight: 700; font-size: 1.1rem;">SRM Institute of Tech (B.Tech AI)</div>
+              </div>
+            </div>
+
+            <!-- Structured Metadata Table -->
+            <table class="meta-table">
+              <tbody>
+                <tr>
+                  <td>Languages</td>
+                  <td>Python · SQL · R · JavaScript · C++</td>
+                </tr>
+                <tr>
+                  <td>Python · SQL · R · JavaScript (ES6+) · C++</td>
+                </tr>
+                <tr>
+                  <td>ML & Deep Learning</td>
+                  <td>Scikit-Learn · TensorFlow · PyTorch · OpenCV · NLTK</td>
+                </tr>
+                <tr>
+                  <td>GenAI & RAG</td>
+                  <td>LangChain · Vector Databases (Chroma/Pinecone) · FastAPI</td>
+                </tr>
+                <tr>
+                  <td>Location</td>
+                  <td>Coimbatore / Chennai, Tamil Nadu, India</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Quick Bio / Matrix Details -->
+        <div class="about-bio-grid">
+          <div class="bio-card">
+            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem;">Undergraduate & Researcher</h3>
+            <p style="color: var(--text-secondary); line-height: 1.7;">
+              Pursuing Artificial Intelligence at SRM Institute of Science and Technology. Passionate about machine learning algorithms, deep neural architectures, and intelligent data systems.
+            </p>
+          </div>
+          <div class="bio-card">
+            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem;">Industry Internship</h3>
+            <p style="color: var(--text-secondary); line-height: 1.7;">
+              Machine Learning Intern at Accent Techno Soft, designing predictive analytics pipelines, NLP models, and automated data processing workflows for real-world enterprise needs.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION (~/skills) -->
+    <section id="skills">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">03 / Core Competencies</div>
+          <h2 class="section-title">Technical <span class="text-accent">Stack.</span></h2>
+        </div>
+
+        <!-- Category Filter Tabs -->
+        <div class="skills-filter" id="skills-filter">
+          <!-- Rendered dynamically -->
+        </div>
+
+        <!-- Skills Grid -->
+        <div class="skills-grid" id="skills-grid">
+          <!-- Rendered dynamically -->
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION (~/projects) -->
+    <section id="projects">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">04 / Featured Work</div>
+          <h2 class="section-title">Projects with <span class="text-accent">Purpose.</span></h2>
+        </div>
+
+        <!-- 3D Interactive Project Showcase Stage -->
+        <div class="project-featured-stage">
+          <div class="project-canvas-container" id="project-3d-stage">
+            <!-- 3D Canvas injected by Three.js -->
+            <div
+              style="position: absolute; bottom: 12px; left: 16px; font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted); pointer-events: none; z-index: 10;">
+              Drag 3D object to rotate
+            </div>
+          </div>
+          <div id="project-stage-details">
+            <!-- Dynamic 3D stage info injected by JS -->
+          </div>
+        </div>
+
+        <!-- Projects Cards Grid -->
+        <div class="projects-grid" id="projects-grid">
+          <!-- Rendered dynamically -->
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION (~/experience) -->
+    <section id="experience">
+      <div class="container">
+        <div class="section-header" style="text-align: center;">
+          <div class="section-tag" style="justify-content: center;">05 / Career Progression</div>
+          <h2 class="section-title">Experience & <span class="text-accent">History.</span></h2>
+        </div>
+
+        <div class="timeline" id="experience-timeline">
+          <!-- Rendered dynamically -->
+        </div>
+      </div>
+    </section>
+
+    <!-- RECOGNITION SECTION (~/recognition) -->
+    <section id="recognition">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">06 / Milestones & Certifications</div>
+          <h2 class="section-title">Recognition.</h2>
+        </div>
+
+        <div class="achievements-grid" id="achievements-grid">
+          <!-- Rendered dynamically -->
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION (~/contact) -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">07 / Get in Touch</div>
+          <h2 class="section-title">Let's build something <span class="text-accent">extraordinary.</span></h2>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Quick Info & Email Copy -->
+          <div>
+            <p style="font-size: 1.15rem; color: var(--text-secondary); margin-bottom: 2rem;">
+              Whether you have an open AI/ML engineering role, a data pipeline challenge, or a collaborative research
+              project, I'm always open to discussing new opportunities.
+            </p>
+
+            <div style="margin-bottom: 2rem;">
+              <div
+                style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.5rem; text-transform: uppercase;">
+                Direct Email</div>
+              <div style="display: flex; gap: 0.75rem; align-items: center;">
+                <span
+                  style="font-family: var(--font-mono); font-size: 1.1rem; font-weight: 600; color: var(--accent-primary);">saminathan6327@gmail.com</span>
+                <button id="copy-email-btn" data-email="saminathan6327@gmail.com" class="icon-btn"
+                  aria-label="Copy email address" title="Copy email">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="14" height="14" x="8" y="8" rx="2" ry="2" />
+                    <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <div>
+              <div
+                style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.75rem; text-transform: uppercase;">
+                Social Networks</div>
+              <div style="display: flex; gap: 0.75rem;">
+                <a href="https://github.com/Saminathan6327" target="_blank" class="btn btn-outline"
+                  style="padding: 0.5rem 1rem;">
+                  GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/sami-nathan6327/" target="_blank" class="btn btn-outline"
+                  style="padding: 0.5rem 1rem;">
+                  LinkedIn
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Glassmorphic Form -->
+          <div class="contact-card">
+            <form id="contact-form">
+              <div class="form-group">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" id="name" required class="form-input" placeholder="John Doe" />
+              </div>
+              <div class="form-group">
+                <label for="email" class="form-label">Your Email</label>
+                <input type="email" id="email" required class="form-input" placeholder="john@example.com" />
+              </div>
+              <div class="form-group">
+                <label for="subject" class="form-label">Subject</label>
+                <input type="text" id="subject" required class="form-input"
+                  placeholder="AI Engineering Opportunity / Project Inquiry" />
+              </div>
+              <div class="form-group">
+                <label for="message" class="form-label">Message</label>
+                <textarea id="message" required class="form-textarea"
+                  placeholder="Tell me about your project or opportunity..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-accent" style="width: 100%;">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container"
+      style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem;">
+      <div>
+        © 2026 Saminathan M. Designed & Built for the Antigravity platform.
+      </div>
+      <div>
+        Built with Vite + Three.js + Vanilla JS
+      </div>
+    </div>
+  </footer>
+
+  <!-- Application Bundle Script -->
+  <script type="module" src="/src/js/main.js"></script>
+</body>
+
+</html>
