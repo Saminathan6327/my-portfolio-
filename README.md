@@ -2,7 +2,7 @@
 
 An interactive, high-performance 3D portfolio web application built with **Vanilla JavaScript**, **WebGL / Three.js**, **Originkit Canvas Physics**, and **Vite**.
 
-[![Portfolio Preview](public/saminathan-profile.png)](https://saminathan6327.github.io/my-portfolio-/)
+[![Portfolio Preview]](https://saminathan6327.github.io/my-portfolio-/)
 
 ---
 
