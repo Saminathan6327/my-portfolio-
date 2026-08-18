@@ -195,41 +195,47 @@
         </div>
 
         <div class="about-grid">
-          <!-- Portrait & Visual Card -->
-          <div class="portrait-card">
-            <canvas id="ascii-portrait-canvas"
-              style="width: 100%; height: 100%; min-height: 480px; display: block; border-radius: 12px; cursor: crosshair;"
-              aria-label="Saminathan M Interactive ASCII Portrait"></canvas>
-            <div class="portrait-scanline"></div>
-            <div
-              style="position: absolute; bottom: 12px; left: 16px; font-family: var(--font-mono); font-size: 0.72rem; color: var(--accent-primary); pointer-events: none; text-shadow: 0 1px 4px rgba(0,0,0,0.9); z-index: 3;">
+          <!-- Left Column: Portrait & Key Roles -->
+          <div class="about-col-left">
+            <div class="portrait-card">
+              <canvas id="ascii-portrait-canvas"
+                style="width: 100%; height: 100%; min-height: 440px; display: block; border-radius: 12px; cursor: crosshair;"
+                aria-label="Saminathan M Interactive ASCII Portrait"></canvas>
+              <div class="portrait-scanline"></div>
+            </div>
 
+            <div class="about-bio-cards">
+              <div class="bio-card">
+                <h3 class="bio-card-title">Undergraduate & Researcher</h3>
+                <p class="bio-card-text">
+                  Pursuing Artificial Intelligence at SRM Institute of Science and Technology. Passionate about machine learning algorithms, deep neural architectures, and intelligent data systems.
+                </p>
+              </div>
+              <div class="bio-card">
+                <h3 class="bio-card-title">Industry Internship</h3>
+                <p class="bio-card-text">
+                  Machine Learning Intern at Accent Techno Soft, designing predictive analytics pipelines, NLP models, and automated data processing workflows for real-world enterprise needs.
+                </p>
+              </div>
             </div>
           </div>
 
-          <!-- Bio & Technical Matrix -->
-          <div>
+          <!-- Right Column: Bio & Technical Matrix -->
+          <div class="about-col-right">
             <p class="about-bio">
               I specialize in combining statistical modeling with modern full-stack architectures. From designing
               high-throughput data processing pipelines for non-profits to building production-ready machine learning
               solutions, I build software that thinks and scales.
             </p>
 
-            <div
-              style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 2rem;">
-              <div
-                style="background: var(--bg-card); padding: 1.25rem; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
-                <div
-                  style="color: var(--accent-primary); font-family: var(--font-mono); font-size: 0.8rem; margin-bottom: 0.5rem; text-transform: uppercase;">
-                  Primary Focus</div>
-                <div style="font-weight: 700; font-size: 1.1rem;">Agentic RAG & Machine Learning</div>
+            <div class="about-stats-grid">
+              <div class="stat-card">
+                <div class="stat-tag tag-primary">Primary Focus</div>
+                <div class="stat-value">Agentic RAG & Machine Learning</div>
               </div>
-              <div
-                style="background: var(--bg-card); padding: 1.25rem; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
-                <div
-                  style="color: var(--accent-secondary); font-family: var(--font-mono); font-size: 0.8rem; margin-bottom: 0.5rem; text-transform: uppercase;">
-                  Education</div>
-                <div style="font-weight: 700; font-size: 1.1rem;">SRM Institute of Tech (B.Tech AI)</div>
+              <div class="stat-card">
+                <div class="stat-tag tag-secondary">Education</div>
+                <div class="stat-value">SRM Institute of Tech (B.Tech AI)</div>
               </div>
             </div>
 
@@ -238,9 +244,6 @@
               <tbody>
                 <tr>
                   <td>Languages</td>
-                  <td>Python · SQL · R · JavaScript · C++</td>
-                </tr>
-                <tr>
                   <td>Python · SQL · R · JavaScript (ES6+) · C++</td>
                 </tr>
                 <tr>
@@ -257,22 +260,6 @@
                 </tr>
               </tbody>
             </table>
-          </div>
-        </div>
-
-        <!-- Quick Bio / Matrix Details -->
-        <div class="about-bio-grid">
-          <div class="bio-card">
-            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem;">Undergraduate & Researcher</h3>
-            <p style="color: var(--text-secondary); line-height: 1.7;">
-              Pursuing Artificial Intelligence at SRM Institute of Science and Technology. Passionate about machine learning algorithms, deep neural architectures, and intelligent data systems.
-            </p>
-          </div>
-          <div class="bio-card">
-            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem;">Industry Internship</h3>
-            <p style="color: var(--text-secondary); line-height: 1.7;">
-              Machine Learning Intern at Accent Techno Soft, designing predictive analytics pipelines, NLP models, and automated data processing workflows for real-world enterprise needs.
-            </p>
           </div>
         </div>
       </div>
