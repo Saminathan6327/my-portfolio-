@@ -91,6 +91,19 @@
   font-weight: 600;
 }
 
+.terminal-link, .cmd-link {
+  color: var(--accent-primary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color var(--transition-fast);
+  cursor: pointer;
+}
+
+.terminal-link:hover, .cmd-link:hover {
+  color: var(--accent-secondary);
+  text-decoration-color: var(--accent-secondary);
+}
+
 .terminal-chip-list {
   display: flex;
   flex-wrap: wrap;

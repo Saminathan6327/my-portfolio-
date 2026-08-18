@@ -48,9 +48,9 @@ Status: Ready for high-impact AI/ML research and full-stack engineering roles.`,
   - Developed predictive machine learning models and optimized NLP data pipelines.`,
 
   contact: `Get in Touch:
-Email:    saminathan6327@gmail.com
-GitHub:   https://github.com/Saminathan6327
-LinkedIn: https://www.linkedin.com/in/sami-nathan6327/`
+Email:    <a href="mailto:saminathan6327@gmail.com" class="terminal-link">saminathan6327@gmail.com</a>
+GitHub:   <a href="https://github.com/Saminathan6327" target="_blank" rel="noopener noreferrer" class="terminal-link">https://github.com/Saminathan6327</a>
+LinkedIn: <a href="https://www.linkedin.com/in/sami-nathan6327/" target="_blank" rel="noopener noreferrer" class="terminal-link">https://www.linkedin.com/in/sami-nathan6327/</a>`
 };
 
 export const SKILL_CATEGORIES = [
