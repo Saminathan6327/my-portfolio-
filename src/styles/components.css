@@ -409,9 +409,15 @@
 }
 
 .about-bio-cards {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.25rem;
+}
+
+@media (max-width: 768px) {
+  .about-bio-cards {
+    grid-template-columns: 1fr;
+  }
 }
 
 .bio-card {
@@ -419,6 +425,9 @@
   padding: 1.25rem 1.5rem;
   border-radius: var(--radius-md);
   border: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   transition: border-color var(--transition-fast), transform var(--transition-fast), box-shadow var(--transition-fast);
 }
 

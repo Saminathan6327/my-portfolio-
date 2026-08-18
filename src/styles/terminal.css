@@ -130,3 +130,91 @@
   border-color: var(--accent-primary);
   color: var(--accent-primary);
 }
+
+/* Help Command Formatting */
+.help-container {
+  padding: 0.5rem 0;
+}
+
+.help-title {
+  font-weight: 700;
+  color: var(--accent-primary);
+  margin-bottom: 0.6rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.03em;
+}
+
+.help-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 0.8rem;
+}
+
+.help-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.help-row .cmd-link {
+  min-width: 100px;
+  font-weight: 600;
+  display: inline-block;
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+  background: rgba(16, 185, 129, 0.08);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+.help-row .cmd-link:hover {
+  background: rgba(16, 185, 129, 0.2);
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 8px rgba(16, 185, 129, 0.3);
+}
+
+.help-desc {
+  color: var(--text-secondary);
+  font-size: 0.825rem;
+}
+
+.help-tip {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  font-style: italic;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  padding-top: 0.5rem;
+  margin-top: 0.4rem;
+}
+
+/* Terminal Refresh Button */
+.terminal-refresh-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 0.25rem;
+  border-radius: var(--radius-sm);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-fast);
+}
+
+.terminal-refresh-btn:hover {
+  color: var(--accent-primary);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.terminal-refresh-btn.spinning svg {
+  animation: terminal-spin 0.5s ease-in-out;
+}
+
+@keyframes terminal-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+

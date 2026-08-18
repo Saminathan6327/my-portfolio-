@@ -103,7 +103,6 @@
         <div class="hero-grid">
           <!-- Hero Text & Terminal -->
           <div class="hero-content">
-            <div class="section-tag">AI Undergraduate & ML Intern</div>
             <h1 class="hero-headline">
               Turning data <br />
               <span class="text-accent">into direction.</span>
@@ -135,8 +134,14 @@
                   <span class="dot dot-yellow"></span>
                   <span class="dot dot-green"></span>
                 </div>
-                <div class="terminal-title">saminathan@dev:~ (bash)</div>
-                <div></div>
+                <button id="terminal-refresh-btn" class="terminal-refresh-btn" title="Refresh terminal" aria-label="Refresh terminal">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/>
+                    <path d="M3 3v5h5"/>
+                    <path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16"/>
+                    <path d="M16 16h5v5"/>
+                  </svg>
+                </button>
               </div>
               <div class="terminal-body" id="terminal-output">
                 <!-- Terminal lines rendered dynamically -->
@@ -149,7 +154,7 @@
                 </div>
                 <div class="terminal-chip-list" id="terminal-chips">
                   <span class="terminal-chip" data-cmd="help">help</span>
-                  <span class="terminal-chip" data-cmd="whoami">whoami</span>
+                  <span class="terminal-chip" data-cmd="me">me</span>
                   <span class="terminal-chip" data-cmd="skills">skills</span>
                   <span class="terminal-chip" data-cmd="projects">projects</span>
                   <span class="terminal-chip" data-cmd="experience">experience</span>
@@ -185,7 +190,6 @@
     <section id="about">
       <div class="container">
         <div class="section-header">
-          <div class="section-tag">02 / Engineering Profile</div>
           <h2 class="section-title">Crafting Intelligent <span class="text-accent">Systems.</span></h2>
         </div>
 
@@ -197,21 +201,6 @@
                 style="width: 100%; height: 100%; min-height: 440px; display: block; border-radius: 12px; cursor: crosshair;"
                 aria-label="Saminathan M Interactive ASCII Portrait"></canvas>
               <div class="portrait-scanline"></div>
-            </div>
-
-            <div class="about-bio-cards">
-              <div class="bio-card">
-                <h3 class="bio-card-title">Undergraduate & Researcher</h3>
-                <p class="bio-card-text">
-                  Pursuing Artificial Intelligence at SRM Institute of Science and Technology. Passionate about machine learning algorithms, deep neural architectures, and intelligent data systems.
-                </p>
-              </div>
-              <div class="bio-card">
-                <h3 class="bio-card-title">Industry Internship</h3>
-                <p class="bio-card-text">
-                  Machine Learning Intern at Accent Techno Soft, designing predictive analytics pipelines, NLP models, and automated data processing workflows for real-world enterprise needs.
-                </p>
-              </div>
             </div>
           </div>
 
@@ -257,6 +246,21 @@
             </table>
           </div>
         </div>
+
+        <div class="about-bio-cards" style="margin-top: 2rem;">
+          <div class="bio-card">
+            <h3 class="bio-card-title">Undergraduate & Researcher</h3>
+            <p class="bio-card-text">
+              Pursuing Artificial Intelligence at SRM Institute of Science and Technology. Passionate about machine learning algorithms, deep neural architectures, and intelligent data systems.
+            </p>
+          </div>
+          <div class="bio-card">
+            <h3 class="bio-card-title">Industry Internship</h3>
+            <p class="bio-card-text">
+              Machine Learning Intern at Accent Techno Soft, designing predictive analytics pipelines, NLP models, and automated data processing workflows for real-world enterprise needs.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -264,7 +268,6 @@
     <section id="skills">
       <div class="container">
         <div class="section-header">
-          <div class="section-tag">03 / Core Competencies</div>
           <h2 class="section-title">Technical <span class="text-accent">Stack.</span></h2>
         </div>
 
@@ -284,7 +287,6 @@
     <section id="projects">
       <div class="container">
         <div class="section-header">
-          <div class="section-tag">04 / Featured Work</div>
           <h2 class="section-title">Projects with <span class="text-accent">Purpose.</span></h2>
         </div>
 
@@ -304,7 +306,6 @@
     <section id="experience">
       <div class="container">
         <div class="section-header" style="text-align: center;">
-          <div class="section-tag" style="justify-content: center;">05 / Career Progression</div>
           <h2 class="section-title">Experience & <span class="text-accent">History.</span></h2>
         </div>
 
@@ -318,7 +319,6 @@
     <section id="recognition">
       <div class="container">
         <div class="section-header">
-          <div class="section-tag">06 / Milestones & Certifications</div>
           <h2 class="section-title">Recognition.</h2>
         </div>
 
@@ -332,7 +332,6 @@
     <section id="contact">
       <div class="container">
         <div class="section-header">
-          <div class="section-tag">07 / Get in Touch</div>
           <h2 class="section-title">Let's build something <span class="text-accent">extraordinary.</span></h2>
         </div>
 
@@ -414,10 +413,9 @@
     <div class="container"
       style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem;">
       <div>
-        © 2026 Saminathan M. Designed & Built for the Antigravity platform.
+        © 2026 Saminathan M.
       </div>
       <div>
-        Built with Vite + Three.js + Vanilla JS
       </div>
     </div>
   </footer>

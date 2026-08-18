@@ -23,6 +23,15 @@ export function initTerminal() {
     outputContainer.scrollTop = outputContainer.scrollHeight;
   }
 
+  const SECTION_MAP = {
+    me: 'about',
+    whoami: 'about',
+    skills: 'skills',
+    projects: 'projects',
+    experience: 'experience',
+    contact: 'contact'
+  };
+
   function handleCommand(cmd) {
     const trimmed = cmd.trim().toLowerCase();
     if (!trimmed) return;
@@ -37,6 +46,15 @@ export function initTerminal() {
 
     if (TERMINAL_COMMANDS[trimmed]) {
       printOutput(TERMINAL_COMMANDS[trimmed]);
+      
+      // Scroll to corresponding page section if mapped
+      const targetId = SECTION_MAP[trimmed];
+      if (targetId) {
+        const targetEl = document.getElementById(targetId);
+        if (targetEl) {
+          targetEl.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
     } else {
       printOutput(`Command not found: <span class="cmd-highlight">${escapeHtml(trimmed)}</span>. Type <span class="cmd-highlight">help</span> for options.`);
     }
@@ -51,6 +69,15 @@ export function initTerminal() {
     }
   });
 
+  // Handle clicks inside terminal output (e.g., interactive help links)
+  outputContainer.addEventListener('click', (e) => {
+    const cmdLink = e.target.closest('.cmd-link, [data-cmd]');
+    if (cmdLink && cmdLink.dataset.cmd) {
+      handleCommand(cmdLink.dataset.cmd);
+      inputEl.focus();
+    }
+  });
+
   // Suggestion Chip Clicks
   if (chipContainer) {
     chipContainer.addEventListener('click', (e) => {
@@ -60,6 +87,19 @@ export function initTerminal() {
         handleCommand(cmd);
         inputEl.focus();
       }
+    });
+  }
+
+  // Refresh Button Logic
+  const refreshBtn = document.getElementById('terminal-refresh-btn');
+  if (refreshBtn) {
+    refreshBtn.addEventListener('click', () => {
+      refreshBtn.classList.add('spinning');
+      outputContainer.innerHTML = '';
+      inputEl.value = '';
+      printOutput(`Welcome to Saminathan's interactive shell. Type <span class="cmd-highlight">help</span> or click command chips below.`);
+      setTimeout(() => refreshBtn.classList.remove('spinning'), 500);
+      inputEl.focus();
     });
   }
 

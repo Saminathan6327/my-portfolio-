@@ -19,13 +19,23 @@ export const PERSONAL_INFO = {
 };
 
 export const TERMINAL_COMMANDS = {
-  help: `Available commands:
-  • <span class="cmd-highlight">whoami</span>      - Display professional profile summary
-  • <span class="cmd-highlight">skills</span>      - List core technical competencies
-  • <span class="cmd-highlight">projects</span>    - Display featured AI/ML & Web projects
-  • <span class="cmd-highlight">experience</span>  - View career history and internships
-  • <span class="cmd-highlight">contact</span>     - Display email and social channels
-  • <span class="cmd-highlight">clear</span>       - Clear terminal window text`,
+  help: `<div class="help-container">
+  <div class="help-title">Available Commands</div>
+  <div class="help-grid">
+    <div class="help-row"><span class="cmd-link" data-cmd="me">me</span> <span class="help-desc">Profile & bio summary</span></div>
+    <div class="help-row"><span class="cmd-link" data-cmd="skills">skills</span> <span class="help-desc">Technical stack & competencies</span></div>
+    <div class="help-row"><span class="cmd-link" data-cmd="projects">projects</span> <span class="help-desc">Featured AI/ML & web projects</span></div>
+    <div class="help-row"><span class="cmd-link" data-cmd="experience">experience</span> <span class="help-desc">Career & internship history</span></div>
+    <div class="help-row"><span class="cmd-link" data-cmd="contact">contact</span> <span class="help-desc">Email & social links</span></div>
+    <div class="help-row"><span class="cmd-link" data-cmd="clear">clear</span> <span class="help-desc">Clear terminal screen</span></div>
+  </div>
+  <div class="help-tip">💡 Click any green command or chip to navigate directly to that section.</div>
+</div>`,
+
+  me: `Saminathan M — AI Undergraduate & Machine Learning Intern
+Focus: Data Pipelines, Predictive Analytics, RAG Architectures, Computer Vision & NLP.
+Location: SRM Institute of Science & Technology | Accent Techno Soft
+Status: Ready for high-impact AI/ML research and full-stack engineering roles.`,
 
   whoami: `Saminathan M — AI Undergraduate & Machine Learning Intern
 Focus: Data Pipelines, Predictive Analytics, RAG Architectures, Computer Vision & NLP.
