@@ -149,8 +149,6 @@ function renderSkills() {
 // Render Projects Component & 3D Stage Logic
 function renderProjects(threeProjectInstance, reactiveGridInstance) {
   const stageDetailsContainer = document.getElementById('project-stage-details');
-  const gridContainer = document.getElementById('projects-grid');
-
   let activeIndex = 0;
 
   // Update Featured Stage Content
@@ -168,12 +166,25 @@ function renderProjects(threeProjectInstance, reactiveGridInstance) {
 
     if (stageDetailsContainer) {
       stageDetailsContainer.innerHTML = `
+        <!-- Interactive Project Switcher Tabs -->
+        <div class="project-selector-tabs" style="display: flex; gap: 0.5rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
+          ${PROJECTS.map((proj, i) => `
+            <button 
+              class="stage-tab-btn ${i === index ? 'active' : ''}" 
+              data-index="${i}"
+              style="padding: 0.45rem 0.85rem; border-radius: var(--radius-md); font-family: var(--font-mono); font-size: 0.78rem; cursor: pointer; transition: all 0.25s ease; border: 1px solid ${i === index ? 'var(--accent-primary)' : 'var(--border-color)'}; background: ${i === index ? 'rgba(16, 185, 129, 0.18)' : 'rgba(255, 255, 255, 0.03)'}; color: ${i === index ? 'var(--accent-primary)' : 'var(--text-secondary)'}; font-weight: 600;"
+            >
+              0${i + 1}. ${proj.title}
+            </button>
+          `).join('')}
+        </div>
+
         <div class="section-tag">${project.subtitle}</div>
-        <h3 style="font-size: 2.25rem; font-weight: 700; margin-bottom: 1rem;">${project.title}</h3>
-        <p style="color: var(--text-secondary); margin-bottom: 1.5rem; font-size: 1.05rem;">${project.description}</p>
+        <h3 style="font-size: 2.25rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-primary);">${project.title}</h3>
+        <p style="color: var(--text-secondary); margin-bottom: 1.5rem; font-size: 1.05rem; line-height: 1.6;">${project.description}</p>
         
         <ul style="margin-bottom: 2rem; padding-left: 1.2rem; color: var(--text-secondary);">
-          ${project.highlights.map(h => `<li style="margin-bottom: 0.5rem;">${h}</li>`).join('')}
+          ${project.highlights.map(h => `<li style="margin-bottom: 0.5rem; line-height: 1.5;">${h}</li>`).join('')}
         </ul>
 
         <div class="project-tags">
@@ -186,23 +197,12 @@ function renderProjects(threeProjectInstance, reactiveGridInstance) {
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
           </a>
         </div>
-        
-        <div style="display: flex; gap: 0.5rem; margin-top: 2rem;">
-          ${PROJECTS.map((_, i) => `
-            <button 
-              class="stage-nav-btn" 
-              style="width: ${i === index ? '36px' : '10px'}; height: 8px; border-radius: 4px; border: none; background: ${i === index ? 'var(--accent-primary)' : 'rgba(255,255,255,0.2)'}; cursor: pointer; transition: all 0.3s ease;"
-              data-index="${i}"
-              aria-label="View project ${i + 1}"
-            ></button>
-          `).join('')}
-        </div>
       `;
 
-      // Wire stage nav dots
-      stageDetailsContainer.querySelectorAll('.stage-nav-btn').forEach(btn => {
+      // Wire stage nav tabs
+      stageDetailsContainer.querySelectorAll('.stage-tab-btn').forEach(btn => {
         btn.addEventListener('click', (e) => {
-          const idx = parseInt(e.target.dataset.index, 10);
+          const idx = parseInt(e.currentTarget.dataset.index, 10);
           activeIndex = idx;
           updateFeaturedStage(idx);
         });
@@ -212,43 +212,6 @@ function renderProjects(threeProjectInstance, reactiveGridInstance) {
 
   // Initial Stage Render
   updateFeaturedStage(0);
-
-  // Render All Projects Grid if container exists
-  if (gridContainer) {
-    gridContainer.innerHTML = PROJECTS.map((proj, i) => `
-      <div class="project-card" data-index="${i}">
-        <div>
-          <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent-primary); margin-bottom: 0.5rem;">
-            0${i + 1} // ${proj.subtitle}
-          </div>
-          <h4 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.75rem;">${proj.title}</h4>
-          <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 1.25rem;">${proj.description}</p>
-          <div class="project-tags">
-            ${proj.tags.map(t => `<span class="project-tag">${t}</span>`).join('')}
-          </div>
-        </div>
-        <div style="margin-top: 1.5rem; display: flex; gap: 0.75rem;">
-          <a href="${proj.github}" target="_blank" class="btn btn-outline" style="padding: 0.45rem 0.9rem; font-size: 0.8rem;">
-            GitHub Repo
-          </a>
-          <button class="btn btn-primary select-stage-btn" data-index="${i}" style="padding: 0.45rem 0.9rem; font-size: 0.8rem;">
-            3D Stage Preview
-          </button>
-        </div>
-      </div>
-    `).join('');
-
-    // Wire Card Buttons to 3D Stage
-    gridContainer.addEventListener('click', (e) => {
-      const btn = e.target.closest('.select-stage-btn');
-      if (btn) {
-        const idx = parseInt(btn.dataset.index, 10);
-        activeIndex = idx;
-        updateFeaturedStage(idx);
-        document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
-      }
-    });
-  }
 }
 
 // Render Experience Timeline
