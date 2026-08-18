@@ -1,4 +1,4 @@
-# 🚀 Saminathan M — AI Engineer & Machine Learning Portfolio
+# Saminathan M — AI Engineer & Machine Learning Portfolio
 
 An interactive, high-performance 3D portfolio web application built with **Vanilla JavaScript**, **WebGL / Three.js**, **Originkit Canvas Physics**, and **Vite**.
 
@@ -6,17 +6,17 @@ An interactive, high-performance 3D portfolio web application built with **Vanil
 
 ---
 
-## ✨ Features
+##  Features
 
-- **🌐 3D Interactive Project Stage**: Custom WebGL 3D object rendering engine powered by Three.js with full drag rotation & real-time geometry updates.
-- **🔳 Originkit Reactive Grid**: Canvas proximity hover particle effect behind 3D objects with dynamic shape switching (`diamond`, `hexagon`, `star`).
-- **🖼️ ASCII Reveal Portrait Card**: Real-time ASCII text matrix image rendering with interactive cursor light-probe reveal effect.
-- **💻 Dynamic Terminal Console**: Interactive CLI console supporting custom system commands (`whoami`, `skills`, `projects`, `experience`, `contact`, `clear`).
-- **🟢 Physics Magnetic Buttons & Cursor**: Smooth spring-damped magnetic hover attraction and custom fluid pointer physics.
+- ** 3D Interactive Project Stage**: Custom WebGL 3D object rendering engine powered by Three.js with full drag rotation & real-time geometry updates.
+- ** Originkit Reactive Grid**: Canvas proximity hover particle effect behind 3D objects with dynamic shape switching (`diamond`, `hexagon`, `star`).
+- ** ASCII Reveal Portrait Card**: Real-time ASCII text matrix image rendering with interactive cursor light-probe reveal effect.
+- ** Dynamic Terminal Console**: Interactive CLI console supporting custom system commands (`whoami`, `skills`, `projects`, `experience`, `contact`, `clear`).
+- ** Physics Magnetic Buttons & Cursor**: Smooth spring-damped magnetic hover attraction and custom fluid pointer physics.
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 ### AI, Machine Learning & Data Systems
 - **Languages**: Python, SQL, R, C++, JavaScript (ES6+)
@@ -30,7 +30,7 @@ An interactive, high-performance 3D portfolio web application built with **Vanil
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 - Node.js `v18.0.0+`
@@ -61,7 +61,7 @@ An interactive, high-performance 3D portfolio web application built with **Vanil
 
 ---
 
-## 📬 Contact & Links
+##  Contact & Links
 
 - **GitHub**: [github.com/Saminathan6327](https://github.com/Saminathan6327)
 - **LinkedIn**: [linkedin.com/in/sami-nathan6327](https://www.linkedin.com/in/sami-nathan6327/)
@@ -69,4 +69,4 @@ An interactive, high-performance 3D portfolio web application built with **Vanil
 
 ---
 
-Developed with ❤️ by **Saminathan M**
+Developed with  by **Saminathan M**
