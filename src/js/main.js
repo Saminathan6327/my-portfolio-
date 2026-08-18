@@ -9,6 +9,7 @@ import { initMagicCursor } from './magic-cursor.js';
 import { initNeonBorder } from './neon-border.js';
 import { initSnakeGrid } from './snake-grid.js';
 import { SKILLS, SKILL_CATEGORIES, PROJECTS, EXPERIENCES, ACHIEVEMENTS } from './data.js';
+import profileImg from '../../public/saminathan-profile.png';
 
 document.addEventListener('DOMContentLoaded', () => {
   // 1. Initialize Core Infrastructure & Physics Cursor
@@ -44,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (asciiCanvas) {
     initAsciiReveal(asciiCanvas, {
-      src: '/saminathan-profile.png',
+      src: profileImg,
       fit: 'cover',
       focusY: 20,
       columns: 140,
