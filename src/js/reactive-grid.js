@@ -94,7 +94,7 @@ export function initReactiveGrid(container, options = {}) {
                 ctx.moveTo(cx, cy - half);
                 ctx.lineTo(cx + half, cy);
                 ctx.lineTo(cx, cy + half);
-                ctx.lineTo(cx, cy - half);
+                ctx.lineTo(cx - half, cy);
                 ctx.closePath();
                 break;
             case "hexagon":

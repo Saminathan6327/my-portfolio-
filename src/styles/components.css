@@ -381,31 +381,79 @@
   position: relative;
   border-radius: var(--radius-lg);
   overflow: hidden;
-  border: 1px solid rgba(27, 183, 84, 0.25);
+  border: 1px solid rgba(27, 183, 84, 0.35);
   background: var(--bg-card);
   aspect-ratio: 4 / 5;
-  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+  min-height: 460px;
+  box-shadow: 0 12px 35px -10px rgba(0, 0, 0, 0.6);
 }
 
 .portrait-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: grayscale(80%);
-  transition: filter var(--transition-smooth), transform var(--transition-smooth);
+  object-position: center 15%;
+  display: block;
+  transition: transform 0.4s ease, filter 0.4s ease;
+  filter: brightness(1.02) contrast(1.05);
 }
 
 .portrait-card:hover .portrait-img {
-  filter: grayscale(0%);
+  filter: brightness(1.08) contrast(1.1);
   transform: scale(1.03);
+}
+
+.portrait-canvas-overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: var(--radius-lg);
+  cursor: crosshair;
+  z-index: 2;
+  transition: opacity 0.35s ease;
 }
 
 .portrait-scanline {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom, transparent 50%, rgba(16, 185, 129, 0.08) 50%);
+  background: linear-gradient(to bottom, transparent 50%, rgba(16, 185, 129, 0.05) 50%);
   background-size: 100% 4px;
   pointer-events: none;
+  z-index: 3;
+}
+
+.portrait-mode-toggle {
+  position: absolute;
+  bottom: 0.85rem;
+  right: 0.85rem;
+  z-index: 5;
+}
+
+.portrait-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  background: rgba(9, 9, 11, 0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(16, 185, 129, 0.4);
+  border-radius: 50%;
+  color: var(--accent-primary);
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.portrait-toggle-btn:hover {
+  background: rgba(16, 185, 129, 0.25);
+  border-color: var(--accent-primary);
+  transform: scale(1.08);
 }
 
 .about-bio-cards {

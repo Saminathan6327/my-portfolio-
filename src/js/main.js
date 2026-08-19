@@ -39,21 +39,57 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 3. Initialize Interactive ASCII Portrait Reveal & Orbiting Neon Border in About Section
+  // 3. Initialize Interactive Portrait & ASCII Reveal Overlay in About Section
   const asciiCanvas = document.getElementById('ascii-portrait-canvas');
   const portraitCard = document.querySelector('.portrait-card');
+  const toggleBtn = document.getElementById('toggle-portrait-mode');
 
   if (asciiCanvas) {
     initAsciiReveal(asciiCanvas, {
       src: profileImg,
       fit: 'cover',
-      focusY: 20,
-      columns: 140,
+      focusY: 15,
+      columns: 130,
       ramp: ' .:-=+*#%@',
       contrast: 110,
       inkColor: '#10b981',
       reveal: true,
-      revealOptions: { size: 85, softness: 20 }
+      revealOptions: { size: 90, softness: 20 }
+    });
+
+    // Default to Photo mode (photo is 100% visible by default)
+    asciiCanvas.style.opacity = '0';
+  }
+
+  if (toggleBtn && asciiCanvas && portraitCard) {
+    let asciiActive = false;
+
+    // Hover effect: show ASCII matrix reveal when mouse enters portrait card (if mode is not locked to ASCII)
+    portraitCard.addEventListener('mouseenter', () => {
+      if (!asciiActive) {
+        asciiCanvas.style.opacity = '0.85';
+      }
+    });
+
+    portraitCard.addEventListener('mouseleave', () => {
+      if (!asciiActive) {
+        asciiCanvas.style.opacity = '0';
+      }
+    });
+
+    // Toggle button: lock ASCII Matrix mode or switch back to crisp Photo mode
+    toggleBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      asciiActive = !asciiActive;
+      if (asciiActive) {
+        asciiCanvas.style.opacity = '1';
+        toggleBtn.innerHTML = `<span class="toggle-icon">📷</span>`;
+        toggleBtn.style.borderColor = 'var(--accent-primary)';
+      } else {
+        asciiCanvas.style.opacity = '0';
+        toggleBtn.innerHTML = `<span class="toggle-icon">👾</span>`;
+        toggleBtn.style.borderColor = 'rgba(16, 185, 129, 0.4)';
+      }
     });
   }
 
