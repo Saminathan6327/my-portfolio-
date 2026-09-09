@@ -12,7 +12,6 @@ export const PERSONAL_INFO = {
   status: "Available for Work & Collaboration",
   location: "Thanjavur, Tamil Nadu, India",
   email: "saminathan6327@gmail.com",
-  phone: "8610912109",
   github: "https://github.com/Saminathan6327",
   linkedin: "https://www.linkedin.com/in/sami-nathan6327/",
   resumeUrl: "#contact"
@@ -26,7 +25,7 @@ export const TERMINAL_COMMANDS = {
     <div class="help-row"><span class="cmd-link" data-cmd="skills">skills</span> <span class="help-desc">Technical stack & competencies</span></div>
     <div class="help-row"><span class="cmd-link" data-cmd="projects">projects</span> <span class="help-desc">Featured AI/ML & security projects</span></div>
     <div class="help-row"><span class="cmd-link" data-cmd="experience">experience</span> <span class="help-desc">Career & internship history</span></div>
-    <div class="help-row"><span class="cmd-link" data-cmd="contact">contact</span> <span class="help-desc">Email, phone & social links</span></div>
+    <div class="help-row"><span class="cmd-link" data-cmd="contact">contact</span> <span class="help-desc">Email & social links</span></div>
     <div class="help-row"><span class="cmd-link" data-cmd="clear">clear</span> <span class="help-desc">Clear terminal screen</span></div>
   </div>
   <div class="help-tip">💡 Click any green command or chip to navigate directly to that section.</div>
@@ -59,7 +58,6 @@ Status: Ready for high-impact AI/ML engineering, research, and data science role
   - Implemented neural network classification models, boosting validation accuracy by 14%.`,
 
   contact: `Get in Touch:
-Phone:    <span class="terminal-link">8610912109</span>
 Email:    <a href="mailto:saminathan6327@gmail.com" class="terminal-link">saminathan6327@gmail.com</a>
 Location: Thanjavur, Tamil Nadu
 GitHub:   <a href="https://github.com/Saminathan6327" target="_blank" rel="noopener noreferrer" class="terminal-link">https://github.com/Saminathan6327</a>
