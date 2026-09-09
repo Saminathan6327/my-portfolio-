@@ -1,20 +1,20 @@
 /**
  * Portfolio Data Source
- * Combines Saminathan's AI/ML Engineering background with Yash Pandav's structural UX data
+ * Reflects Saminathan M's AI & Data Science background and PDF resume credentials
  */
 
 export const PERSONAL_INFO = {
   name: "Saminathan M",
   handle: "saminathan_ai",
-  title: "AI Engineer & Machine Learning Specialist",
+  title: "AI & Data Science Specialist | Machine Learning Engineer",
   subTitle: "Turning complex data into direction.",
-  bio: "Artificial Intelligence undergraduate at SRM Institute of Science and Technology and Machine Learning Intern at Accent Techno Soft. Specializing in end-to-end data pipelines, predictive modeling, NLP, and Agentic AI architectures.",
+  bio: "AI & Data Science undergraduate (SRMIST) with practical experience in machine learning pipelines, deep learning (NLP/CV), and full-stack development. Proficient in Python and TensorFlow, aiming to apply predictive modeling and analytical skills to real-world AI engineering challenges.",
   status: "Available for Work & Collaboration",
-  location: "Tamil Nadu & Gujarat, India",
+  location: "Thanjavur, Tamil Nadu, India",
   email: "saminathan6327@gmail.com",
+  phone: "8610912109",
   github: "https://github.com/Saminathan6327",
   linkedin: "https://www.linkedin.com/in/sami-nathan6327/",
-  twitter: "https://twitter.com/saminathan_ml",
   resumeUrl: "#contact"
 };
 
@@ -24,129 +24,131 @@ export const TERMINAL_COMMANDS = {
   <div class="help-grid">
     <div class="help-row"><span class="cmd-link" data-cmd="me">me</span> <span class="help-desc">Profile & bio summary</span></div>
     <div class="help-row"><span class="cmd-link" data-cmd="skills">skills</span> <span class="help-desc">Technical stack & competencies</span></div>
-    <div class="help-row"><span class="cmd-link" data-cmd="projects">projects</span> <span class="help-desc">Featured AI/ML & web projects</span></div>
+    <div class="help-row"><span class="cmd-link" data-cmd="projects">projects</span> <span class="help-desc">Featured AI/ML & security projects</span></div>
     <div class="help-row"><span class="cmd-link" data-cmd="experience">experience</span> <span class="help-desc">Career & internship history</span></div>
-    <div class="help-row"><span class="cmd-link" data-cmd="contact">contact</span> <span class="help-desc">Email & social links</span></div>
+    <div class="help-row"><span class="cmd-link" data-cmd="contact">contact</span> <span class="help-desc">Email, phone & social links</span></div>
     <div class="help-row"><span class="cmd-link" data-cmd="clear">clear</span> <span class="help-desc">Clear terminal screen</span></div>
   </div>
   <div class="help-tip">💡 Click any green command or chip to navigate directly to that section.</div>
 </div>`,
 
-  me: `Saminathan M — AI Undergraduate & Machine Learning Intern
-Focus: Data Pipelines, Predictive Analytics, RAG Architectures, Computer Vision & NLP.
-Location: SRM Institute of Science & Technology | Accent Techno Soft
-Status: Ready for high-impact AI/ML research and full-stack engineering roles.`,
+  me: `Saminathan M — AI & Data Science Undergraduate (SRMIST) & ML Intern
+Focus: Machine Learning Pipelines, Deep Learning (NLP/CV), Data Analytics, Zero-Trust AI.
+Location: Thanjavur / Tiruchirappalli, Tamil Nadu
+Status: Ready for high-impact AI/ML engineering, research, and data science roles.`,
 
-  whoami: `Saminathan M — AI Undergraduate & Machine Learning Intern
-Focus: Data Pipelines, Predictive Analytics, RAG Architectures, Computer Vision & NLP.
-Location: SRM Institute of Science & Technology | Accent Techno Soft
-Status: Ready for high-impact AI/ML research and full-stack engineering roles.`,
+  whoami: `Saminathan M — AI & Data Science Undergraduate (SRMIST) & ML Intern
+Focus: Machine Learning Pipelines, Deep Learning (NLP/CV), Data Analytics, Zero-Trust AI.
+Location: Thanjavur / Tiruchirappalli, Tamil Nadu
+Status: Ready for high-impact AI/ML engineering, research, and data science roles.`,
 
   skills: `Core Technical Competencies:
-[Languages]   Python, SQL, R, JavaScript, TypeScript, C++
-[ML & Data]   Scikit-Learn, TensorFlow, PyTorch, Pandas, NumPy, OpenCV, NLTK
-[Agentic AI]  LangChain, RAG Pipelines, VectorDB (Chroma/Pinecone), FastApi
-[Web Stack]   HTML5, CSS3, TailwindCSS, React, Node.js, WebGL/Three.js`,
+[AI & Data]   Python, TensorFlow, Scikit-Learn, Pandas, NLP, Data Visualization
+[Web/Full-Stack] React.js, Vite, Tailwind CSS, Node.js, Express.js, MongoDB, Firebase, HTML, CSS, JavaScript
+[DevOps & Tools] Git, GitHub, Docker, VS Code, SQL, Streamlit, Flask`,
 
-  projects: `Selected Featured Projects:
-1. NGO Data Pipeline Engine [SQL + R] -> Automated at-risk student tracking
-2. RAG Document Chatbot [Python + Gemini + Pinecone] -> Context-grounded Q&A engine
-3. 20-Day Portfolio Sprint [Python + SQL + Algorithms] -> Micro-project engineering suite`,
+  projects: `Featured Projects:
+1. NGO Data Pipeline Engine [SQL · R · Python · Pandas] -> Automated student tracking for non-profits
+2. Zero-Trust AI Security Pipeline [Python · FastAPI · Docker · Scikit-Learn] -> Real-time payload sanitization & mTLS
+3. RAG Document Chatbot [Python · Gemini · Vector Search] -> Context-grounded Q&A engine`,
 
   experience: `Professional Experience:
-• ML Intern @ Accent Techno Soft (2024 - Present)
-  - Developed predictive machine learning models and optimized NLP data pipelines.`,
+• Machine Learning Intern @ Accent Techno Soft (Jun 2026 – Jul 2026)
+  - Engineered NLP & CV training pipelines with Python & TensorFlow, cutting latency by 18%.
+  - Processed 15+ datasets (100k+ records) with Pandas/NumPy, cutting data prep time by 25%.
+  - Implemented neural network classification models, boosting validation accuracy by 14%.`,
 
   contact: `Get in Touch:
+Phone:    <span class="terminal-link">8610912109</span>
 Email:    <a href="mailto:saminathan6327@gmail.com" class="terminal-link">saminathan6327@gmail.com</a>
+Location: Thanjavur, Tamil Nadu
 GitHub:   <a href="https://github.com/Saminathan6327" target="_blank" rel="noopener noreferrer" class="terminal-link">https://github.com/Saminathan6327</a>
 LinkedIn: <a href="https://www.linkedin.com/in/sami-nathan6327/" target="_blank" rel="noopener noreferrer" class="terminal-link">https://www.linkedin.com/in/sami-nathan6327/</a>`
 };
 
 export const SKILL_CATEGORIES = [
   { id: "all", label: "All Skills" },
-  { id: "ai", label: "AI & Machine Learning" },
-  { id: "frontend", label: "Frontend & 3D" },
-  { id: "backend", label: "Backend & Systems" },
-  { id: "data", label: "Data & Pipelines" }
+  { id: "ai", label: "AI & Data Science" },
+  { id: "web", label: "Web & Full-Stack" },
+  { id: "tools", label: "DevOps & Tools" }
 ];
 
 export const SKILLS = [
+  // AI & Data Science
   { name: "Python", category: "ai", level: 95, tag: "Primary" },
-  { name: "TensorFlow & PyTorch", category: "ai", level: 90, tag: "Deep Learning" },
+  { name: "TensorFlow", category: "ai", level: 90, tag: "Deep Learning" },
   { name: "Scikit-Learn", category: "ai", level: 92, tag: "ML" },
-  { name: "LangChain & RAG", category: "ai", level: 88, tag: "GenAI" },
-  { name: "Computer Vision (OpenCV)", category: "ai", level: 85, tag: "Vision" },
-  { name: "Natural Language Processing", category: "ai", level: 87, tag: "NLP" },
+  { name: "Pandas & NumPy", category: "ai", level: 95, tag: "Data Wrangling" },
+  { name: "Natural Language Processing (NLP)", category: "ai", level: 88, tag: "Deep Learning" },
+  { name: "Computer Vision", category: "ai", level: 86, tag: "Vision" },
+  { name: "Data Visualization", category: "ai", level: 90, tag: "Analytics" },
 
-  { name: "JavaScript (ES6+)", category: "frontend", level: 90, tag: "Core" },
-  { name: "Three.js / WebGL", category: "frontend", level: 82, tag: "3D Rendering" },
-  { name: "HTML5 & Vanilla CSS", category: "frontend", level: 95, tag: "UI/UX" },
-  { name: "Tailwind CSS", category: "frontend", level: 90, tag: "Styling" },
+  // Web / Full-Stack
+  { name: "React.js & Vite", category: "web", level: 88, tag: "Frontend" },
+  { name: "Tailwind CSS", category: "web", level: 90, tag: "Styling" },
+  { name: "Node.js & Express.js", category: "web", level: 86, tag: "Backend" },
+  { name: "MongoDB & Firebase", category: "web", level: 84, tag: "Database" },
+  { name: "HTML, CSS & JavaScript", category: "web", level: 92, tag: "Core Web" },
 
-  { name: "Node.js & Express", category: "backend", level: 86, tag: "Backend" },
-  { name: "FastAPI & REST APIs", category: "backend", level: 90, tag: "API Engine" },
-  { name: "C++ Systems", category: "backend", level: 78, tag: "Algorithms" },
-
-  { name: "SQL & PostgreSQL", category: "data", level: 92, tag: "Database" },
-  { name: "R & Statistical Modeling", category: "data", level: 85, tag: "Analytics" },
-  { name: "Pandas & NumPy", category: "data", level: 95, tag: "Data Wrangling" },
-  { name: "Vector Databases (Chroma)", category: "data", level: 88, tag: "Vector DB" }
+  // DevOps & Tools
+  { name: "Git & GitHub", category: "tools", level: 92, tag: "VCS" },
+  { name: "Docker", category: "tools", level: 85, tag: "Containers" },
+  { name: "SQL", category: "tools", level: 90, tag: "Database" },
+  { name: "Streamlit & Flask", category: "tools", level: 88, tag: "ML Serving" },
+  { name: "VS Code", category: "tools", level: 95, tag: "IDE" }
 ];
 
 export const PROJECTS = [
   {
     id: "ngo-pipeline",
     title: "NGO Data Pipeline Engine",
-    subtitle: "SQL + R · Multi-Variable Educational Analytics",
+    subtitle: "2025 – 2026 · SQL · R · Python · Pandas",
     category: "data",
     geometryType: "torusKnot",
     gridShape: "diamond",
     color: "#10b981",
-    description: "An end-to-end data pipeline designed to process comprehensive student demographic and performance data for non-profit organizations to identify and track at-risk students in real-time.",
-    tags: ["SQL", "R", "ETL Pipelines", "Data Analytics", "Predictive Modeling"],
-    github: "https://github.com/Saminathan6327/ngo-data-pipeline",
+    description: "Developed an end-to-end data pipeline designed to identify and track at-risk students for Non-Governmental Organizations.",
+    tags: ["SQL", "R", "Python", "Pandas", "ETL Pipelines", "Data Analytics"],
+    github: "https://github.com/Saminathan6327",
     demo: "#",
     highlights: [
-      "Processed over 50,000+ student data points with automated cleaning and validation.",
-      "Achieved 94% accuracy in predicting dropout risk factors using multivariate logistic regression.",
-      "Built interactive dashboard reporting for field operations and resource allocation."
+      "Developed an end-to-end data pipeline designed to identify and track at-risk students for Non-Governmental Organizations.",
+      "Processed comprehensive multi-variable student datasets, optimizing query runtime and delivering automated, actionable visual reports for stakeholders to improve outreach targeting."
+    ]
+  },
+  {
+    id: "zero-trust-ai",
+    title: "Zero-Trust AI Security Pipeline",
+    subtitle: "2025 – 2026 · Python · FastAPI · Scikit-Learn · Docker · JWT · Cryptography",
+    category: "ai",
+    geometryType: "octahedron",
+    gridShape: "hexagon",
+    color: "#3b82f6",
+    description: "Architected a Zero-Trust machine learning pipeline implementing continuous verification, role-based access controls (RBAC), and mutual TLS (mTLS) for microservice-to-model communications.",
+    tags: ["Python", "FastAPI", "Scikit-Learn", "Docker", "JWT", "Cryptography", "Zero-Trust"],
+    github: "https://github.com/Saminathan6327",
+    demo: "#",
+    highlights: [
+      "Architected a Zero-Trust machine learning pipeline implementing continuous verification, role-based access controls (RBAC), and mutual TLS (mTLS) for microservice-to-model communications.",
+      "Implemented real-time inference guardrails and input anomaly detection algorithms to sanitize payloads, mitigating adversarial injection attacks and data poisoning with 99% validation accuracy."
     ]
   },
   {
     id: "rag-chatbot",
     title: "RAG Document Chatbot",
-    subtitle: "Python + Google Gemini + Pinecone",
+    subtitle: "Python · Google Gemini · Pinecone",
     category: "ai",
-    geometryType: "octahedron",
-    gridShape: "hexagon",
-    color: "#3b82f6",
+    geometryType: "icosahedron",
+    gridShape: "star",
+    color: "#8b5cf6",
     description: "A Retrieval-Augmented Generation (RAG) chatbot built with Python, Google Gemini LLM, and Pinecone vector database for document search and context-grounded Q&A.",
     tags: ["RAG", "Python", "Google Gemini", "Pinecone", "Vector Search"],
-    github: "https://github.com/Saminathan6327/rag-chatbot",
+    github: "https://github.com/Saminathan6327",
     demo: "#",
     highlights: [
       "Integrated Google Gemini AI model for high-accuracy contextual response generation.",
       "Engineered vector embedding index pipelines using Pinecone for instant document retrieval.",
       "Built robust prompt boundaries to eliminate hallucinations and enforce source grounding."
-    ]
-  },
-  {
-    id: "portfolio-sprint",
-    title: "20-Day Portfolio Sprint",
-    subtitle: "Python + SQL + Algorithms",
-    category: "data",
-    geometryType: "icosahedron",
-    gridShape: "star",
-    color: "#8b5cf6",
-    description: "A 20-day sprint of Python, SQL, and algorithm micro-projects engineered for technical problem solving, algorithm design, and technical interview preparation.",
-    tags: ["Python", "SQL", "Algorithms", "Data Structures", "Interview Prep"],
-    github: "https://github.com/Saminathan6327/20-Day-Portfolio-Sprint",
-    demo: "#",
-    highlights: [
-      "Completed 20 modular daily sprints spanning data structures, SQL optimization, and Python scripts.",
-      "Benchmarked algorithmic space/time complexity for production code efficiency.",
-      "Structured clean modular code repositories with comprehensive test coverage."
     ]
   }
 ];
@@ -155,35 +157,42 @@ export const EXPERIENCES = [
   {
     role: "Machine Learning Intern",
     company: "Accent Techno Soft",
-    period: "2024 – Present",
-    location: "Coimbatore, India",
-    description: "Working on enterprise machine learning pipelines, NLP feature extraction, and predictive algorithm optimizations for client applications.",
+    period: "Jun 2026 – Jul 2026",
+    location: "Tamil Nadu, India",
+    description: "Engineered and optimized machine learning pipelines, deep learning models, and complex data preprocessing routines for high-accuracy AI systems.",
     achievements: [
-      "Refactored data preprocessing modules, improving ETL pipeline throughput by 35%.",
-      "Developed fine-tuned NLP classification models for customer sentiment and automated ticket routing.",
-      "Collaborated with senior software architects to deploy production ML APIs."
+      "Engineered and optimized NLP and Computer Vision training pipelines using Python and TensorFlow, reducing model inference latency by 18%.",
+      "Cleaned and structured 15+ complex datasets exceeding 100k+ records using Pandas and NumPy, cutting data preparation time by 25% and ensuring zero null leakage for neural network training.",
+      "Implemented neural network classification models and backpropagation routines across 10+ code reviews, boosting baseline validation accuracy by 14%."
     ],
-    skills: ["Python", "Scikit-Learn", "FastAPI", "NLP", "Pandas"]
+    skills: ["Python", "TensorFlow", "Pandas", "NumPy", "NLP", "Computer Vision", "Scikit-Learn"]
   }
 ];
 
 export const ACHIEVEMENTS = [
   {
-    title: "Google Data Analytics Professional",
+    title: "Google Data Analytics Professional Certificate",
     issuer: "Google / Coursera",
-    date: "2025",
-    description: "Successfully completed advanced coursework and a technical capstone focused on SQL, R programming, data pipelines, and visual reporting."
+    date: "Certified",
+    description: "Comprehensive professional program covering data analysis, SQL queries, R programming, data cleaning, and automated visualization reporting."
   },
   {
-    title: "AWS Cloud & Machine Learning Certifications",
+    title: "AWS Cloud Practitioner Essentials",
     issuer: "Amazon Web Services (AWS)",
-    date: "2024 - 2025",
-    description: "Earned multiple technical credentials including AWS Cloud Practitioner, SageMaker Unified Studio, Foundations of Prompt Engineering, and Building Language Models."
+    date: "Certified",
+    description: "Foundational mastery of cloud concepts, security, architecture, compute services, and AWS cloud deployment best practices."
   },
   {
-    title: "AI: Constraint Satisfaction Certification",
-    issuer: "NPTEL",
-    date: "2025",
-    description: "Cleared advanced academic curriculum and technical examinations focused on artificial intelligence logic and constraint satisfaction algorithms."
+    title: "Introduction to SageMaker Unified Studio",
+    issuer: "Amazon Web Services (AWS)",
+    date: "Certified",
+    description: "Hands-on expertise in machine learning development environments, model training, feature stores, and automated MLOps pipelines."
+  },
+  {
+    title: "Building Language Models on AWS",
+    issuer: "Amazon Web Services (AWS)",
+    date: "Certified",
+    description: "Specialized training on constructing, fine-tuning, and deploying modern Large Language Models and generative AI solutions on AWS infrastructure."
   }
 ];
+
