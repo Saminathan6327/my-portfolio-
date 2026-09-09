@@ -67,9 +67,14 @@
             <!-- Theme icon injected by JS -->
           </button>
 
-          <a href="#contact" class="btn btn-outline"
-            style="display: none; padding: 0.45rem 1rem; font-size: 0.8125rem;">
-            Contact
+          <a href="./Saminathan_M_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline"
+            style="padding: 0.45rem 0.9rem; font-size: 0.8125rem; display: inline-flex; align-items: center; gap: 0.35rem;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/>
+              <polyline points="14 2 14 8 20 8"/>
+            </svg>
+            Resume
           </a>
 
           <button id="mobile-toggle" class="icon-btn mobile-toggle" aria-label="Open navigation menu"
@@ -93,6 +98,7 @@
       <a href="#projects" class="nav-link">~/projects</a>
       <a href="#experience" class="nav-link">~/experience</a>
       <a href="#contact" class="nav-link">~/contact</a>
+      <a href="./Saminathan_M_Resume.pdf" target="_blank" class="nav-link" style="color: var(--accent-primary);">📄 View Resume (PDF)</a>
     </div>
   </header>
 
@@ -112,7 +118,7 @@
               pipelines, deep learning (NLP/CV), and full-stack development.
             </p>
 
-            <div class="hero-actions" style="margin-bottom: 2.5rem;">
+            <div class="hero-actions" style="margin-bottom: 2.5rem; display: flex; gap: 0.75rem; flex-wrap: wrap;">
               <a href="#projects" class="btn btn-accent">
                 Explore Work
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
@@ -121,8 +127,22 @@
                   <path d="m12 5 7 7-7 7" />
                 </svg>
               </a>
-              <a href="#contact" class="btn btn-outline">
-                Let's Collaborate
+              <a href="./Saminathan_M_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/>
+                  <polyline points="14 2 14 8 20 8"/>
+                </svg>
+                View Resume
+              </a>
+              <a href="./Saminathan_M_Resume.pdf" download="Saminathan_M_Resume.pdf" class="btn btn-outline" title="Download PDF Resume">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                  <polyline points="7 10 12 15 17 10"/>
+                  <line x1="12" y1="15" x2="12" y2="3"/>
+                </svg>
+                Download PDF
               </a>
             </div>
 
@@ -157,6 +177,7 @@
                 <div class="terminal-chip-list" id="terminal-chips">
                   <span class="terminal-chip" data-cmd="help">help</span>
                   <span class="terminal-chip" data-cmd="me">me</span>
+                  <span class="terminal-chip" data-cmd="resume">resume</span>
                   <span class="terminal-chip" data-cmd="skills">skills</span>
                   <span class="terminal-chip" data-cmd="projects">projects</span>
                   <span class="terminal-chip" data-cmd="experience">experience</span>
@@ -270,6 +291,42 @@
               reduction), structured 15+ datasets exceeding 100k+ records, and boosted neural classification accuracy by
               14%.
             </p>
+          </div>
+        </div>
+
+        <!-- Official Resume Card -->
+        <div class="bio-card" style="margin-top: 2rem; border-color: var(--accent-primary); background: rgba(16, 185, 129, 0.04);">
+          <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+            <div>
+              <h3 class="bio-card-title" style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.35rem; color: var(--accent-primary);">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/>
+                  <polyline points="14 2 14 8 20 8"/>
+                </svg>
+                Official Resume (PDF)
+              </h3>
+              <p class="bio-card-text" style="margin-bottom: 0;">
+                Saminathan M — AI & Data Science Resume. Open in browser viewer or download file directly.
+              </p>
+            </div>
+            <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+              <a href="./Saminathan_M_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-accent" style="padding: 0.5rem 1.1rem; font-size: 0.875rem;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                  <polyline points="15 3 21 3 21 9"/>
+                  <line x1="10" y1="14" x2="21" y2="3"/>
+                </svg>
+                View PDF Online
+              </a>
+              <a href="./Saminathan_M_Resume.pdf" download="Saminathan_M_Resume.pdf" class="btn btn-outline" style="padding: 0.5rem 1.1rem; font-size: 0.875rem;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                  <polyline points="7 10 12 15 17 10"/>
+                  <line x1="12" y1="15" x2="12" y2="3"/>
+                </svg>
+                Download PDF
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -394,11 +451,11 @@
             <form id="contact-form">
               <div class="form-group">
                 <label for="name" class="form-label">Your Name</label>
-                <input type="text" id="name" required class="form-input" placeholder="John Doe" />
+                <input type="text" id="name" required class="form-input" placeholder="Sami" />
               </div>
               <div class="form-group">
                 <label for="email" class="form-label">Your Email</label>
-                <input type="email" id="email" required class="form-input" placeholder="john@example.com" />
+                <input type="email" id="email" required class="form-input" placeholder="sami@example.com" />
               </div>
               <div class="form-group">
                 <label for="subject" class="form-label">Subject</label>

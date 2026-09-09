@@ -14,7 +14,7 @@ export const PERSONAL_INFO = {
   email: "saminathan6327@gmail.com",
   github: "https://github.com/Saminathan6327",
   linkedin: "https://www.linkedin.com/in/sami-nathan6327/",
-  resumeUrl: "#contact"
+  resumeUrl: "./Saminathan_M_Resume.pdf"
 };
 
 export const TERMINAL_COMMANDS = {
@@ -22,6 +22,7 @@ export const TERMINAL_COMMANDS = {
   <div class="help-title">Available Commands</div>
   <div class="help-grid">
     <div class="help-row"><span class="cmd-link" data-cmd="me">me</span> <span class="help-desc">Profile & bio summary</span></div>
+    <div class="help-row"><span class="cmd-link" data-cmd="resume">resume</span> <span class="help-desc">View & download PDF resume</span></div>
     <div class="help-row"><span class="cmd-link" data-cmd="skills">skills</span> <span class="help-desc">Technical stack & competencies</span></div>
     <div class="help-row"><span class="cmd-link" data-cmd="projects">projects</span> <span class="help-desc">Featured AI/ML & security projects</span></div>
     <div class="help-row"><span class="cmd-link" data-cmd="experience">experience</span> <span class="help-desc">Career & internship history</span></div>
@@ -30,6 +31,10 @@ export const TERMINAL_COMMANDS = {
   </div>
   <div class="help-tip">💡 Click any green command or chip to navigate directly to that section.</div>
 </div>`,
+
+  resume: `Saminathan M — Official PDF Resume:
+View PDF:     <a href="./Saminathan_M_Resume.pdf" target="_blank" class="terminal-link">Open PDF in Browser</a>
+Download PDF: <a href="./Saminathan_M_Resume.pdf" download="Saminathan_M_Resume.pdf" class="terminal-link">Download Resume File</a>`,
 
   me: `Saminathan M — AI & Data Science Undergraduate (SRMIST) & ML Intern
 Focus: Machine Learning Pipelines, Deep Learning (NLP/CV), Data Analytics, Zero-Trust AI.
