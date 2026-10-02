@@ -7,7 +7,7 @@ import { initContact } from './contact.js';
 import { initAsciiReveal } from './ascii-reveal.js';
 import { initMagicCursor } from './magic-cursor.js';
 import { initNeonBorder } from './neon-border.js';
-import { initSnakeGrid } from './snake-grid.js';
+import { initVortexDust } from './vortex-dust.js';
 import { SKILLS, SKILL_CATEGORIES, PROJECTS, EXPERIENCES, ACHIEVEMENTS } from './data.js';
 const profileImg = './saminathan-profile.png';
 
@@ -24,18 +24,18 @@ document.addEventListener('DOMContentLoaded', () => {
     enableGlow: false
   });
 
-  // 2. Initialize Autonomous Snake Grid Canvas in Hero Card
+  // 2. Initialize Vortex Dust Canvas in Hero Card
   const heroWrapper = document.querySelector('.hero-3d-wrapper') || document.getElementById('hero-canvas');
   if (heroWrapper) {
-    initSnakeGrid(heroWrapper, {
-      snakeColor: "#0C6428",
-      cellSize: 25,
-      gap: 2,
-      rounded: 11,
-      speed: 8,
-      fade: 38,
-      foodColor: "#F9731A",
-      boardColor: "rgba(255, 255, 255, 0.06)"
+    initVortexDust(heroWrapper, {
+      colorA: "#FFFFFF",
+      colorB: "#10b981",
+      count: 20,
+      size: 8,
+      pull: 20,
+      speed: 10,
+      followPointer: true,
+      strength: 10
     });
   }
 

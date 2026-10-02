@@ -281,9 +281,9 @@
 .hero-headline {
   font-size: 2.75rem;
   font-weight: 800;
-  line-height: 1.05;
-  letter-spacing: -0.05em;
-  margin-top: 1rem;
+  line-height: 1.15;
+  letter-spacing: -0.04em;
+  margin-top: 0.75rem;
   margin-bottom: 1.5rem;
 }
 
@@ -298,7 +298,7 @@
   color: var(--text-secondary);
   max-width: 540px;
   margin-bottom: 2rem;
-  line-height: 1.7;
+  line-height: 1.55;
 }
 
 .hero-actions {
@@ -459,7 +459,7 @@
 .about-bio-cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1.25rem;
+  gap: 1.5rem;
 }
 
 @media (max-width: 768px) {
@@ -470,7 +470,7 @@
 
 .bio-card {
   background: var(--bg-card);
-  padding: 1.25rem 1.5rem;
+  padding: 1.5rem 1.75rem;
   border-radius: var(--radius-md);
   border: 1px solid var(--border-color);
   display: flex;
@@ -489,7 +489,7 @@
   font-size: 1.1rem;
   font-weight: 700;
   color: var(--text-primary);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.65rem;
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -504,26 +504,26 @@
 
 .bio-card-text {
   color: var(--text-secondary);
-  font-size: 0.9rem;
-  line-height: 1.6;
+  font-size: 0.925rem;
+  line-height: 1.55;
 }
 
 .about-bio {
-  font-size: 1.15rem;
-  line-height: 1.7;
+  font-size: 1.125rem;
+  line-height: 1.55;
   color: var(--text-primary);
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.25rem;
 }
 
 .about-stats-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.25rem;
+  gap: 1.5rem;
 }
 
 .stat-card {
   background: var(--bg-card);
-  padding: 1.25rem 1.5rem;
+  padding: 1.5rem 1.75rem;
   border-radius: var(--radius-md);
   border: 1px solid var(--border-color);
   transition: border-color var(--transition-fast);
